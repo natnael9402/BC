@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View, Image, ScrollView, Button, Linking } from 'react-native';
+import { StyleSheet, Text, View, Image, ScrollView, Button, Linking, ActivityIndicator } from 'react-native';
 import AntDesign from '@expo/vector-icons/AntDesign';
 import FontAwesome6 from '@expo/vector-icons/FontAwesome6'; 
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
@@ -8,15 +8,21 @@ export default function App() {
 
   const name = 'Natnael A'
 
+  const links = {
+    github:'github.com/natnael9402',
+    telegram: 't.me/natty9402',
+    whatsapp: 'wa.me/251900424437'
+  }
+
   const getZodiac = () => {
     return '♋☀️ ♐🌖'
   }
 
   const renderIcons = () => {
     return <View style={{flexDirection: 'row', marginVertical: 10, gap: 10}}>
-    <AntDesign name="github" size={35} color="black" />
-    <FontAwesome6 name="telegram" size={35} color="blue" />
-    <FontAwesome6 name="whatsapp" size={35} color="green" />
+    {links.github && <AntDesign name="github" size={35} color="black" />}
+    {links.telegram && <FontAwesome6 name="telegram" size={35} color="blue" />}
+    {links.whatsapp && <FontAwesome6 name="whatsapp" size={35} color="green" />}
     </View>
   }
 
@@ -24,8 +30,22 @@ export default function App() {
       Linking.openURL("mailto:natty.natty9402@gmail.com")
   }
 
+
+  const isLoading = true
+  const likes = 0
+
   return (
     
+
+  //   <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+  //     {/* <ActivityIndicator /> */}
+  //     {isLoading ? <Text>Hello World</Text> : <ActivityIndicator />}
+
+  //   <Text>Post has {likes || 'no'} likes</Text>
+
+  //   </View>
+  // )
+
     <SafeAreaProvider>
       <SafeAreaView edges={['bottom']}>
       <ScrollView showsVerticalScrollIndicator={false}>
