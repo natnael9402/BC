@@ -66,20 +66,14 @@ export default function App() {
       <Button title='Contact Me' onPress={onPre}/>
       
 
-      <Text style={{ padding: 10, fontSize: 16, lineHeight: 20 }}>
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-    eiusmod tempor incididunt ut labore et dolore magna aliqua. Nam
-    aliquam sem et tortor consequat id porta nibh. Pellentesque nec
-    nam aliquam sem. Placerat duis ultricies lacus sed. Non curabitur
-    gravida arcu ac tortor dignissim convallis aenean. Amet nisl purus
-    in mollis nunc. Vel elit scelerisque mauris pellentesque pulvinar
-    pellentesque. Sagittis orci a scelerisque purus semper eget duis
-    at tellus. Sed libero enim sed faucibus turpis in eu mi bibendum.
-    Duis at Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-     Ratione, a excepturi quidem eos iusto possimus molestiae, aut sapiente
-      recusandae molestias culpa et. Quisquam autem ab omnis deleniti
-       voluptate, doloremque error!
+      <Text style={{ padding: 10, fontSize: 16, lineHeight: 20, textAlign:'center'}}>
+      I'm a full stack developers with over 4 years of expirience
   </Text>
+
+
+<Text style={{fontWeight: 'bold', fontSize: 18, marginTop:20}}>Projects
+</Text>
+
 
       <StatusBar style="light" />
     </View>
