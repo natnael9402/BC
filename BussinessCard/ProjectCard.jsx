@@ -5,6 +5,8 @@ const ProjectCard = ({image, text}) => {
       <View>
         <Image source={image} style={styles.image} />
         <Text style={styles.text}>{text}</Text>
+
+        
       </View>
     )
   }
